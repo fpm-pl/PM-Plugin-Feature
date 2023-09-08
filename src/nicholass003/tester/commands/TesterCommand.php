@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace nicholass003\tester\commands;
 
+use nicholass003\tester\Main;
 use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
 use pocketmine\player\Player;
@@ -27,5 +28,10 @@ class TesterCommand extends Command implements PluginOwned
         } else {
             $sender->sendMessage(T::GREEN . "You are a player.");
         }
+    }
+
+    public function getOwningPlugin() : Main
+    {
+        return $this->plugin;
     }
 }
