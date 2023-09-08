@@ -11,6 +11,7 @@ class PlayerEnchanting implements Listener
 {
     public function onPlayerEnchantingTable(PlayerEnchantingOptionsRequestEvent $event) : void
     {
+        // cancel player enchanting transaction
         $event->cancel();
     }
 }
