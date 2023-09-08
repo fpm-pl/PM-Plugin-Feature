@@ -1,0 +1,8 @@
+name: tester
+api: 5.5.0
+version: 0.0.1
+main: nicholass003\tester\Main
+author: nicholass003
+permissions:
+  tester.command:
+    default: true
